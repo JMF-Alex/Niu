@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Style guide · Niu</title>
+  <meta name="description" content="Colours, typography, spacing, radius, icons, motion and components used across the Niu website.">
+  <meta name="robots" content="noindex">
+  <!-- include:head -->
+</head>
+<body>
+  <!-- include:nav -->
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-copy left" data-hero>
+          <p class="caption-1 eyebrow">Design system</p>
+          <h1 class="heading-1 gradient-text">Niu style guide</h1>
+          <p class="lead body-3 muted">The single source for colours, type, spacing, motion and components. Every value is defined once in <code>apps/web/src/styles.css</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cross">
+      <div class="container">
+        <h2 class="heading-4" style="margin-bottom:var(--s-300)">Colour</h2>
+        <h2 class="heading-4" style="margin-bottom:var(--s-300)">Logo</h2>
+        <p class="body-6 muted" style="margin-bottom:var(--s-300);max-width:680px">An egg resting in a nest: a bowl, a rim and a dot, all on a 32 pixel grid. It is one colour and inherits the text colour, so it works on dark and light backgrounds. Keep at least 8px of clear space around it and never go below 16px.</p>
+        <div class="logo-demo" style="margin-bottom:var(--s-700)">
+          <div><span class="logo"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 15h24l-.17 2H4.17Z"/><path d="M4.52 18.5h22.96A12 12 0 0 1 4.52 18.5Z"/><circle cx="16" cy="7.5" r="4.5"/></svg><span class="logo-word">niu</span></span></div>
+          <div class="on-light"><span class="logo" style="color:#000000"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 15h24l-.17 2H4.17Z"/><path d="M4.52 18.5h22.96A12 12 0 0 1 4.52 18.5Z"/><circle cx="16" cy="7.5" r="4.5"/></svg><span class="logo-word">niu</span></span></div>
+          <div><img src="/favicon.svg" width="48" height="48" alt="Niu app icon"></div>
+        </div>
+        <h2 class="heading-4" style="margin-bottom:var(--s-300)">Colour</h2>
+        <p class="body-6 muted" style="margin-bottom:var(--s-300);max-width:680px">A monochrome base with six accents. Accents cycle through icons, step numbers and section markers so each section has its own tone. Blue also marks focus and the scroll bar, green means success, red means an error.</p>
+        <div class="cells cells-4" data-stagger>
+          <div class="cell"><div class="swatch" style="background:#000000"></div><p class="title-4">Background</p><p class="caption-5 muted mono">--bg #000000</p></div>
+          <div class="cell"><div class="swatch" style="background:#181818"></div><p class="title-4">Surface</p><p class="caption-5 muted mono">--surface #181818</p></div>
+          <div class="cell"><div class="swatch" style="background:#272727"></div><p class="title-4">Line</p><p class="caption-5 muted mono">--line #272727</p></div>
+          <div class="cell"><div class="swatch" style="background:#313131"></div><p class="title-4">Line strong</p><p class="caption-5 muted mono">--line-strong #313131</p></div>
+          <div class="cell"><div class="swatch" style="background:#EDEDED"></div><p class="title-4">Text</p><p class="caption-5 muted mono">--text #EDEDED</p></div>
+          <div class="cell"><div class="swatch" style="background:#A1A1A1"></div><p class="title-4">Muted text</p><p class="caption-5 muted mono">--muted #A1A1A1</p></div>
+          <div class="cell"><div class="swatch" style="background:#52A8FF"></div><p class="title-4">Blue</p><p class="caption-5 muted mono">--blue #52A8FF</p></div>
+          <div class="cell"><div class="swatch" style="background:#BF7AF0"></div><p class="title-4">Violet</p><p class="caption-5 muted mono">--violet #BF7AF0</p></div>
+          <div class="cell"><div class="swatch" style="background:#F75F8F"></div><p class="title-4">Pink</p><p class="caption-5 muted mono">--pink #F75F8F</p></div>
+          <div class="cell"><div class="swatch" style="background:#FFB224"></div><p class="title-4">Amber</p><p class="caption-5 muted mono">--amber #FFB224</p></div>
+          <div class="cell"><div class="swatch" style="background:#4CC38A"></div><p class="title-4">Green</p><p class="caption-5 muted mono">--green #4CC38A</p></div>
+          <div class="cell"><div class="swatch" style="background:#0AC7B4"></div><p class="title-4">Teal</p><p class="caption-5 muted mono">--teal #0AC7B4</p></div>
+          <div class="cell"><div class="swatch" style="background:#FF6166"></div><p class="title-4">Red</p><p class="caption-5 muted mono">--red #FF6166</p></div>
+          <div class="cell"><div class="swatch" style="background:#1F1F1F"></div><p class="title-4">Surface 2</p><p class="caption-5 muted mono">--surface-2 #1F1F1F</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="heading-4" style="margin-bottom:var(--s-100)">Typography</h2>
+        <p class="body-6 muted" style="margin-bottom:var(--s-300)">Geist for everything, Geist Mono only for code and numbers. Weights 400, 500 and 600. No italics. Headings use tight negative tracking.</p>
+        <div class="reveal">
+          <div class="sg-row"><span class="caption-4 muted mono">heading-1 60/60</span><span class="heading-1">Deploy today</span></div>
+          <div class="sg-row"><span class="caption-4 muted mono">heading-2 48/48</span><span class="heading-2">Deploy today</span></div>
+          <div class="sg-row"><span class="caption-4 muted mono">heading-3 36/40</span><span class="heading-3">Deploy today</span></div>
+          <div class="sg-row"><span class="caption-4 muted mono">heading-4 30/36</span><span class="heading-4">Deploy today</span></div>
+          <div class="sg-row"><span class="caption-4 muted mono">heading-6 20/28</span><span class="heading-6">Deploy today</span></div>
+          <div class="sg-row"><span class="caption-4 muted mono">title-2 18/28</span><span class="title-2">Card title</span></div>
+          <div class="sg-row"><span class="caption-4 muted mono">title-4 14/20</span><span class="title-4">Label or nav item</span></div>
+          <div class="sg-row"><span class="caption-4 muted mono">body-3 16/24</span><span class="body-3">Running text for paragraphs and descriptions.</span></div>
+          <div class="sg-row"><span class="caption-4 muted mono">body-6 14/20</span><span class="body-6">Smaller running text inside cells.</span></div>
+          <div class="sg-row"><span class="caption-4 muted mono">button-md 16/24</span><span class="button-md">Start free for 30 days</span></div>
+          <div class="sg-row"><span class="caption-4 muted mono">caption-2 14/20</span><span class="caption-2 muted">Metadata and helper text</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--s-600)">
+        <div class="reveal">
+          <h2 class="heading-4" style="margin-bottom:var(--s-300)">Spacing</h2>
+          <div class="sg-row"><span class="caption-4 muted mono">--s-75 · 8px</span><div class="space-bar" style="width:8px"></div></div>
+          <div class="sg-row"><span class="caption-4 muted mono">--s-100 · 12px</span><div class="space-bar" style="width:12px"></div></div>
+          <div class="sg-row"><span class="caption-4 muted mono">--s-200 · 16px</span><div class="space-bar" style="width:16px"></div></div>
+          <div class="sg-row"><span class="caption-4 muted mono">--s-300 · 24px</span><div class="space-bar" style="width:24px"></div></div>
+          <div class="sg-row"><span class="caption-4 muted mono">--s-400 · 32px</span><div class="space-bar" style="width:32px"></div></div>
+          <div class="sg-row"><span class="caption-4 muted mono">--s-600 · 48px</span><div class="space-bar" style="width:48px"></div></div>
+          <div class="sg-row"><span class="caption-4 muted mono">--s-900 · 96px</span><div class="space-bar" style="width:96px"></div></div>
+        </div>
+        <div class="reveal">
+          <h2 class="heading-4" style="margin-bottom:var(--s-300)">Corner radius</h2>
+          <div style="display:flex;flex-wrap:wrap;gap:var(--s-300)">
+            <div class="grid" style="gap:var(--s-75)"><div class="radius-demo" style="border-radius:var(--r-md)"></div><span class="caption-4 muted mono">md 6px · buttons</span></div>
+            <div class="grid" style="gap:var(--s-75)"><div class="radius-demo" style="border-radius:var(--r-xl)"></div><span class="caption-4 muted mono">xl 12px · cards, nav</span></div>
+            <div class="grid" style="gap:var(--s-75)"><div class="radius-demo" style="border-radius:var(--r-full)"></div><span class="caption-4 muted mono">full · pills, avatars</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="heading-4" style="margin-bottom:var(--s-300)">Components</h2>
+        <div class="cells cells-3" data-stagger>
+          <div class="cell">
+            <p class="title-3">Buttons</p>
+            <p class="caption-2 muted">Hover lifts 1px, press scales to 98%, focus shows a blue ring.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:var(--s-75)">
+              <button class="btn btn-primary button-md" type="button">Primary</button>
+              <button class="btn btn-secondary button-md" type="button">Secondary</button>
+              <button class="btn btn-primary button-md" type="button" disabled>Disabled</button>
+            </div>
+          </div>
+          <div class="cell">
+            <p class="title-3">Inputs</p>
+            <label class="title-4" for="sg-ok">Email</label>
+            <input class="input" id="sg-ok" placeholder="you@example.com">
+            <label class="title-4" for="sg-err">Email with error</label>
+            <input class="input" id="sg-err" value="marta@" aria-invalid="true" aria-describedby="sg-err-msg">
+            <p class="body-5 form-msg error" id="sg-err-msg">That email looks incomplete. Use the format name@example.com.</p>
+          </div>
+          <div class="cell">
+            <p class="title-3">Pill and badge</p>
+            <a class="pill caption-1" href="/features.html"><span class="dot" aria-hidden="true"></span>Announcement<i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+            <span class="badge caption-3">Most picked</span>
+            <p class="status caption-2 muted"><span class="status-dot" aria-hidden="true"></span>All systems normal</p>
+          </div>
+          <div class="cell">
+            <i class="ph ph-database icon" aria-hidden="true"></i>
+            <p class="title-2">Feature cell</p>
+            <p class="body-6 muted">Cells share 1px lines inside a rounded frame. Icons come from Phosphor, regular weight.</p>
+          </div>
+          <div class="cell" aria-hidden="true">
+            <p class="title-3">Loading state</p>
+            <div class="skeleton" style="height:28px;width:40%"></div>
+            <div class="skeleton" style="height:36px;width:60%"></div>
+            <div class="skeleton" style="height:64px"></div>
+          </div>
+          <div class="cell">
+            <p class="title-3">Empty state</p>
+            <p class="body-6 muted">Plain sentence saying what is missing and what to do next. Never a blank box.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="heading-4" style="margin-bottom:var(--s-300)">Motion</h2>
+        <div class="cells cells-3" data-stagger>
+          <div class="cell"><p class="title-3">One curve</p><p class="body-6 muted"><code>cubic-bezier(0.22, 1, 0.36, 1)</code> in CSS, <code>power4.out</code> in GSAP. 500ms for movement, 300ms for colour.</p></div>
+          <div class="cell"><p class="title-3">GSAP and ScrollTrigger</p><p class="body-6 muted">Hero lines rise out of a mask, sections fade up 32px once, the tagline lights word by word, counters run on view.</p></div>
+          <div class="cell"><p class="title-3">Reduced motion</p><p class="body-6 muted">With reduced motion turned on, nothing moves. Content shows immediately and only colour changes remain.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- include:footer -->
+</body>
+</html>

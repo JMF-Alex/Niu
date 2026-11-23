@@ -1,0 +1,27 @@
+services:
+  mongo:
+    image: mongo:8
+    ports: ["127.0.0.1:27017:27017"]
+    volumes: [mongo-data:/data/db]
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping')"]
+      interval: 5s
+      retries: 10
+
+  api:
+    build: { context: ., target: api }
+    environment:
+      MONGODB_URI: mongodb://mongo:27017/niu
+      PORT: "4000"
+    depends_on:
+      mongo: { condition: service_healthy }
+    restart: unless-stopped
+
+  web:
+    build: { context: ., target: web }
+    ports: ["8080:80"]
+    depends_on: [api]
+    restart: unless-stopped
+
+volumes:
+  mongo-data:

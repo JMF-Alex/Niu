@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Features · Niu</title>
+  <meta name="description" content="Git deploys, managed MongoDB, HTTPS on custom domains, logs and metrics, and EU hosting in Barcelona. Everything Niu does for your Node.js app.">
+  <meta property="og:title" content="Features · Niu">
+  <meta property="og:description" content="Everything between git push and production, handled for you.">
+  <!-- include:head -->
+</head>
+<body>
+  <!-- include:nav -->
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-copy" data-hero>
+          <p class="caption-1 eyebrow">Features</p>
+          <h1 class="heading-1 gradient-text">Everything between<br>git push and production</h1>
+          <p class="lead body-3 muted">Niu builds, runs, secures and watches your Node.js app so you only think about the code. Here is what happens under the hood.</p>
+          <a class="btn btn-primary button-md" href="/index.html#start">Start free for 30 days <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cross">
+      <div class="container">
+        <div class="cells cells-2" data-stagger>
+          <article class="cell" id="deploys">
+            <i class="ph ph-git-branch icon" aria-hidden="true"></i>
+            <h2 class="heading-6">Deploys from Git</h2>
+            <p class="body-6 muted">Every push to your production branch builds a new release. Other branches get their own preview URL.</p>
+            <ul class="body-6"><li><i class="ph ph-check" aria-hidden="true"></i>Preview URL for every pull request</li><li><i class="ph ph-check" aria-hidden="true"></i>One click rollback to any of the last 20 releases</li><li><i class="ph ph-check" aria-hidden="true"></i>Zero downtime swaps between releases</li></ul>
+          </article>
+          <article class="cell" id="database">
+            <i class="ph ph-database icon" aria-hidden="true"></i>
+            <h2 class="heading-6">Managed MongoDB 8</h2>
+            <p class="body-6 muted">Each project gets its own database, already wired into your app through <code>MONGODB_URI</code>.</p>
+            <ul class="body-6"><li><i class="ph ph-check" aria-hidden="true"></i>Nightly backups kept for 14 days</li><li><i class="ph ph-check" aria-hidden="true"></i>Restore any backup in one click</li><li><i class="ph ph-check" aria-hidden="true"></i>Export as a standard mongodump archive</li></ul>
+          </article>
+          <article class="cell" id="domains">
+            <i class="ph ph-lock-simple icon" aria-hidden="true"></i>
+            <h2 class="heading-6">Domains and HTTPS</h2>
+            <p class="body-6 muted">Use a free niu.app subdomain or bring your own. Certificates are issued and renewed automatically.</p>
+            <ul class="body-6"><li><i class="ph ph-check" aria-hidden="true"></i>Certificates ready in about 7 seconds</li><li><i class="ph ph-check" aria-hidden="true"></i>Redirects from www and plain HTTP</li><li><i class="ph ph-check" aria-hidden="true"></i>HTTP/2 and HTTP/3 enabled</li></ul>
+          </article>
+          <article class="cell" id="observability">
+            <i class="ph ph-pulse icon" aria-hidden="true"></i>
+            <h2 class="heading-6">Logs and metrics</h2>
+            <p class="body-6 muted">See what your app is doing right now, and what it did after the last deploy.</p>
+            <ul class="body-6"><li><i class="ph ph-check" aria-hidden="true"></i>Live log stream in the dashboard and CLI</li><li><i class="ph ph-check" aria-hidden="true"></i>Response time, memory and CPU per release</li><li><i class="ph ph-check" aria-hidden="true"></i>Email alerts when your app restarts</li></ul>
+          </article>
+          <article class="cell" id="security">
+            <i class="ph ph-shield-check icon" aria-hidden="true"></i>
+            <h2 class="heading-6">Secure by default</h2>
+            <p class="body-6 muted">Every app runs in its own container on patched servers, with secrets stored encrypted.</p>
+            <ul class="body-6"><li><i class="ph ph-check" aria-hidden="true"></i>Encrypted environment variables</li><li><i class="ph ph-check" aria-hidden="true"></i>Weekly OS and runtime patches</li><li><i class="ph ph-check" aria-hidden="true"></i>Two factor sign in for every account</li></ul>
+          </article>
+          <article class="cell" id="region">
+            <i class="ph ph-map-pin icon" aria-hidden="true"></i>
+            <h2 class="heading-6">Hosted in Barcelona</h2>
+            <p class="body-6 muted">Apps and databases run in Barcelona, with encrypted backups in Frankfurt. Your data stays in the EU.</p>
+            <ul class="body-6"><li><i class="ph ph-check" aria-hidden="true"></i>11 ms average latency within Catalonia</li><li><i class="ph ph-check" aria-hidden="true"></i>GDPR data processing agreement included</li><li><i class="ph ph-check" aria-hidden="true"></i>Support in Catalan, Spanish and English</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container process">
+        <div class="process-aside">
+          <p class="caption-1 eyebrow">Under the hood</p>
+          <h2 class="heading-3">What happens when you push</h2>
+          <p class="body-3 muted">Four stages, about 90 seconds on a first deploy and under a minute after that.</p>
+          <div class="progress" aria-hidden="true"><span></span></div>
+        </div>
+        <ol class="process-steps">
+          <li class="process-step card"><span class="caption-4 step-num mono">01 · Build</span><h3 class="title-1">Your code becomes a release</h3><p class="body-6 muted">We pull the commit, install dependencies with your lockfile and run your build script in a clean container.</p></li>
+          <li class="process-step card"><span class="caption-4 step-num mono">02 · Provision</span><h3 class="title-1">The pieces it needs appear</h3><p class="body-6 muted">Database, environment variables and certificates are attached. Nothing to configure on later deploys.</p></li>
+          <li class="process-step card"><span class="caption-4 step-num mono">03 · Release</span><h3 class="title-1">Traffic moves over safely</h3><p class="body-6 muted">The new release must answer a health check before it gets traffic. If it fails, the old one keeps serving.</p></li>
+          <li class="process-step card"><span class="caption-4 step-num mono">04 · Watch</span><h3 class="title-1">We keep an eye on it</h3><p class="body-6 muted">Logs and metrics start streaming. If the app crashes, we restart it and send you an email.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- include:cta -->
+  </main>
+
+  <!-- include:footer -->
+</body>
+</html>

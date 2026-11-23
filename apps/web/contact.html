@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Contact · Niu</title>
+  <meta name="description" content="Write to the Niu team about sales, support or free accounts for schools. We reply within one working day in Catalan, Spanish or English.">
+  <meta property="og:title" content="Contact · Niu">
+  <meta property="og:description" content="Talk to a person, not a ticket queue.">
+  <!-- include:head -->
+</head>
+<body>
+  <!-- include:nav -->
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-copy left" data-hero>
+          <p class="caption-1 eyebrow">Contact</p>
+          <h1 class="heading-1 gradient-text">Talk to a person,<br>not a ticket queue</h1>
+          <p class="lead body-3 muted">We reply within one working day, in Catalan, Spanish or English.</p>
+        </div>
+
+        <div class="contact reveal" style="margin-top:var(--s-700)">
+          <form class="form card" id="contact" novalidate style="padding:var(--s-400);gap:var(--s-200)">
+            <div class="field-row">
+              <div class="field">
+                <label class="title-4" for="name">Name</label>
+                <input class="input" id="name" name="name" autocomplete="name" maxlength="100" required>
+              </div>
+              <div class="field">
+                <label class="title-4" for="c-email">Email</label>
+                <input class="input" id="c-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="field">
+              <label class="title-4" for="topic">Topic</label>
+              <select class="input" id="topic" name="topic">
+                <option value="sales">Plans and pricing</option>
+                <option value="support">Help with my project</option>
+                <option value="education">Free accounts for a school</option>
+              </select>
+            </div>
+            <div class="field">
+              <label class="title-4" for="message">Message</label>
+              <textarea class="input" id="message" name="message" maxlength="2000" required aria-describedby="message-hint"></textarea>
+              <span class="caption-5 hint" id="message-hint">Include your project URL if the question is about a deploy.</span>
+            </div>
+            <button class="btn btn-primary button-md" type="submit">Send message</button>
+            <p class="form-msg" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="cells" style="grid-template-columns:1fr" data-stagger>
+            <div class="cell"><i class="ph ph-envelope-simple icon" aria-hidden="true"></i><p class="title-3">Email</p><p class="body-6 muted">hola@niu.app</p></div>
+            <div class="cell"><i class="ph ph-buildings icon" aria-hidden="true"></i><p class="title-3">Office</p><p class="body-6 muted">Carrer de Pujades 77<br>08005 Barcelona</p></div>
+            <div class="cell"><i class="ph ph-clock icon" aria-hidden="true"></i><p class="title-3">Hours</p><p class="body-6 muted">Monday to Friday, 9:00 to 18:00 CET.<br>Outages are watched around the clock.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- include:footer -->
+</body>
+</html>
