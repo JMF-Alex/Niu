@@ -1,6 +1,6 @@
 # Niu · Project document
 
-> **Niu** is a managed hosting service for Node.js apps with a MongoDB database, running on servers in Barcelona.
+> **Niu** is a managed hosting service for Node.js apps with a MongoDB database
 
 ## 1. Access to everything
 
@@ -20,7 +20,7 @@ Students, freelancers and small teams who build JavaScript apps have to choose b
 - **Large foreign platforms**, which are complex, often bill in dollars and keep data outside the EU.
 
 ### Solution
-Niu connects a GitHub repository and publishes the app with HTTPS in about 90 seconds. Every project includes a managed MongoDB database with nightly backups. The servers are in Barcelona and support is offered in Catalan, Spanish and English.
+Niu connects a GitHub repository and publishes the app with HTTPS in about 90 seconds. Every project includes a managed MongoDB database with nightly backups. The servers are in Madrid and support is offered in Spanish and English.
 
 ### Target audience
 1. Web and app development students (DAW/DAM) and bootcamp students, who start on the free plan.
@@ -37,7 +37,7 @@ Niu connects a GitHub repository and publishes the app with HTTPS in about 90 se
 Every paid plan starts with 30 free days and no card. A student who starts for free becomes a paying customer once they start working.
 
 ### Competition and differentiation
-Competitors: Render, Railway, Heroku, DigitalOcean App Platform. Niu stands out by keeping data in the EU (Barcelona), pricing in euros with VAT included, offering support in Catalan and a free plan designed for schools.
+Competitors: Render, Railway, Heroku, DigitalOcean App Platform. Niu stands out by keeping data in the EU (Madrid), pricing in euros with VAT included, offering support in Spanish and a free plan designed for schools.
 
 ## 3. What was built
 

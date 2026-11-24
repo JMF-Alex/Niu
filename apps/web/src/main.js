@@ -3,7 +3,7 @@ import './animations.js';
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
-const euro = (cents) => (cents === 0 ? 'Free' : `${(cents / 100).toLocaleString('ca-ES', { minimumFractionDigits: 2 })} €`);
+const euro = (cents) => (cents === 0 ? 'Free' : `${(cents / 100).toLocaleString('es-ES', { minimumFractionDigits: 2 })} €`);
 
 const here = location.pathname.replace(/\/$/, '/index.html').replace(/\.html$/, '');
 document.querySelectorAll('.nav-links a, .mobile-menu a, .footer-col a').forEach((a) => {

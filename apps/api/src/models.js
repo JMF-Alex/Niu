@@ -20,7 +20,7 @@ const PLANS = [
   { slug: 'pro', name: 'Pro', priceCents: 749, order: 2, blurb: 'For sites that need to stay awake.',
     features: ['5 Node apps', '5 GB MongoDB', 'Custom domains with HTTPS', 'Nightly backups kept 14 days'] },
   { slug: 'team', name: 'Team', priceCents: 2390, order: 3, blurb: 'For agencies and small product teams.',
-    features: ['20 Node apps', '25 GB MongoDB', '5 team seats', 'Priority support in Catalan, Spanish and English'] },
+    features: ['20 Node apps', '25 GB MongoDB', '5 team seats', 'Priority support in Spanish and English'] },
 ];
 
 export async function seedPlans() {
