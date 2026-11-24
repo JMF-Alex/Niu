@@ -94,7 +94,7 @@ mm.add({
     }
   }
 
-  $$('.section-head h2, .cta-band h2, .cta-box h2, .process-aside h2').forEach((el) => {
+  $$('.section-head h2, .cta-box h2, .process-aside h2').forEach((el) => {
     cleanups.push(splitLines(el, (lines) => gsap.from(lines, {
       yPercent: 110, duration: 1, stagger: 0.1,
       scrollTrigger: { trigger: el, start: 'top 88%', once: true },

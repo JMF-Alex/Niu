@@ -410,8 +410,6 @@ textarea.input { resize: vertical; min-height: 144px; }
 .cta-box { display: grid; gap: var(--s-300); justify-items: center; text-align: center; }
 .cta-box h2, .cta-box > p { max-width: 680px; }
 .cta-box .form { max-width: 560px; }
-.cta-band { display: grid; gap: var(--s-200); justify-items: center; text-align: center; }
-.cta-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--s-100); margin-top: var(--s-100); }
 .risk { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--s-75) var(--s-300); }
 .risk span { display: inline-flex; align-items: center; gap: var(--s-75); }
 .risk i { color: var(--green); }
