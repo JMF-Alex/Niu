@@ -94,7 +94,7 @@ mm.add({
     }
   }
 
-  $$('.section-head h2, .cta-box h2, .process-aside h2').forEach((el) => {
+  $$('.section-head h2, .cta-band h2, .cta-box h2, .process-aside h2').forEach((el) => {
     cleanups.push(splitLines(el, (lines) => gsap.from(lines, {
       yPercent: 110, duration: 1, stagger: 0.1,
       scrollTrigger: { trigger: el, start: 'top 88%', once: true },
@@ -131,7 +131,7 @@ mm.add({
     const accent = split.words.slice(-3);
     gsap.timeline({ scrollTrigger: { trigger: tagline, start: 'top 75%', end: 'bottom 40%', scrub: 0.6 } })
       .to(split.words, { color: '#EDEDED', stagger: 0.12, duration: 0.5 })
-      .to(accent, { color: '#52A8FF', stagger: 0.12, duration: 0.5 }, '-=0.2');
+      .to(accent, { color: '#FFFFFF', stagger: 0.12, duration: 0.5 }, '-=0.2');
     cleanups.push(() => split.revert());
   }
 
